@@ -1,0 +1,78 @@
+1.	 Introduction 
+
+    a.	Purpose - This project aims to utilize Big Data technologies and analytics to  boost revenue for a Health Care insurance company.
+
+    b.	Intended Audience and Use – Data Engineers will design systems to process and manage data smoothly. Developers will ensure the accurate implementation of functionalities and features. 
+        Testers will ensure that the software meets the specified criteria and its functions as intended. Data Analysts and Data Scientists will develop insights and predictive models to make 
+        strategic decisions. Business Analysts will facilitate clear communication between business objectives and technical implementation. Project Managers will monitor progress, milestones, 
+        and resource allocation. 
+
+    c.	Product Scope - The project focuses on improving revenue and understanding customers better. It involves gathering data from competitors using various methods like web scraping and 
+        third-party sources. This data will be processed, cleaned, and transformed, leading to detailed analyses. These analyses will help create customized offers, accurately calculate royalties, 
+        and gain valuable insights into customer behavior. All of this information will guide smart business decisions to boost revenue.
+
+    d.	Definitions and Acronyms -Clearly define all key terms, acronyms, and abbreviations used in the SRS. This will help eliminate any ambiguity and ensure that all parties can easily 
+        understand the document.
+
+
+2.	Overall Description – We're making this product to help our Health Care insurance company do better with making money and understanding our customers. Using smart data analysis, 
+    we can determine how our customers behave, offer them things they like, and make smart business decisions. This should help us make more money and make our customers happy. 
+    This is a brand-new thing we're making. Even though we're already focused on Health Care insurance, this new thing will make us even better by using advanced  data analysis. 
+    It fits right in with our current systems and tools. We're using tools like AWS S3, Redshift, Databricks, and AWS EMR Studio. This helps us work smoothly and make good decisions based on data.
+
+    a.	Needs –
+      i.	Executives: They'll gain insights into strategic decision-making and revenue enhancement strategies.
+      ii.	Data Analysts and Data Scientists: They'll use the product to process and analyze data for valuable insights.
+      iii.	Business Analysts: They'll translate business needs into technical specifications.
+      iv.	Testers: They'll ensure the product functions as intended and is defect-free.
+      v.	Project Managers: They'll oversee progress and alignment with objectives.
+      vi.	Data Engineers: They'll design the systems to process and manage data smoothly. 
+      vii.	Developers: They will ensure accurate implementation of functionalities and features.
+
+    b.	Assumptions and Dependencies – The product is built to fit perfectly into a powerful Big Data system, including tools like AWS S3, Redshift, Databricks, and AWS EMR Studio. Making sure these 
+        tools work well together is important for the product to do its job effectively. The product's design and functionality align with current technological standards, ensuring seamless integration 
+        and smooth operation. It's assumed that competitor data will be sourced from various channels through data scraping and third-party sources. The success of data analysis lies  in the assumption 
+        that the collected data is accurate, relevant, and representative of the market landscape. We're assuming that the information we collect follows all the rules and ethical guidelines for data 
+        privacy. This is to make sure we keep customer data safe and secure.
+
+
+3.	System Features and Requirements
+
+    a.	Functional Requirements 
+        i. Claim Analysis: The system must identify and report the disease with the highest number of insurance claims.
+        ii. Subscriber Segmentation: The system must identify subscribers under the age of 30 who have subscribed to any subgroup.
+        iii. Group Subgroup Analysis: The system must determine the group with the highest number of subgroups.
+        iv. Hospital Performance:	The system must identify the hospital serving the most number of patients based on claims data.
+        v. Subscription Frequency:	The system must analyze and identify the subgroup that has the highest number of subscription instances.
+        vi. Rejected Claims Count:	The system must calculate and report the total number of claims that have been rejected.
+        vii. Claims by City:	The system must determine the city from which the highest number of insurance claims originate.
+        viii. Policy Preference:	The system must analyze the data to identify whether subscribers mostly subscribe to government or private policies.
+        ix. Premium Analysis:	The system must calculate and report the average monthly premium paid by subscribers to the insurance company.
+        x. Profitability Analysis:	The system must determine the most profitable group based on an analysis of claims and revenues.
+        xi. Patient Segmentation:	The system must list all patients below the age of 18 who have been admitted for cancer.
+        xii. High-Charge Patients:	The system must list patients with cashless insurance and total charges greater than or equal to Rs. 50,000.
+        xiii. Knee Surgery Patients:	The system must list female patients over the age of 40 who have undergone knee surgery in the past year.
+
+    b.	External Interface Requirements 
+        i.	User: The user interface should be designed to be easily usable, allowing users to navigate through different analyses and reports effortlessly
+        ii.	Hardware:  The system should be able to seamlessly interact with hardware devices like printers or scanners.
+        iii.	Software: 
+        iv.	Communications :
+
+    c.	System Features 
+        i. Data processing pipeline: Gather data from diverse sources, extract data from AWS S3 storage, and initiate data cleaning processes.
+        ii. Data cleaning and transformation: Data cleaning algorithms to rectify errors, manage null values, and validate data, as well as transform cleaned data into suitable formats
+        iii. Redshift table creation: AWS Redshift tables based on the cleaned data, integrate analytical results
+        iv. Integration with AWS services: Integrate the system seamlessly with AWS services such as S3, Redshift, and other relevant tools.
+        v. Data analysis and reporting: Build analytical capabilities using tools like Databricks and AWS EMR Studio to perform required data analysis tasks.
+        vi. Security and access control: Implement role-based access control mechanisms
+
+
+    d.	Nonfunctional Requirements 
+        i.	Performance requirements: The system must handle a given amount of data and deliver analysis results promptly.
+        ii.	Security requirements: The system must stick to data privacy standards, ensuring secure storage and processing of sensitive information
+        iii.	Usability requirements: The user interface should be user-friendly enabling users to interact with the system without extensive training.
+        iv.	Scalability requirements: The system should be designed to handle increased data volumes and user demands 
+
+
+
