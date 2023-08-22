@@ -42,16 +42,16 @@
         i. Claim Analysis: The system must identify and report the disease with the highest number of insurance claims.
         ii. Subscriber Segmentation: The system must identify subscribers under the age of 30 who have subscribed to any subgroup.
         iii. Group Subgroup Analysis: The system must determine the group with the highest number of subgroups.
-        iv. Hospital Performance:	The system must identify the hospital serving the most number of patients based on claims data.
-        v. Subscription Frequency:	The system must analyze and identify the subgroup that has the highest number of subscription instances.
-        vi. Rejected Claims Count:	The system must calculate and report the total number of claims that have been rejected.
-        vii. Claims by City:	The system must determine the city from which the highest number of insurance claims originate.
-        viii. Policy Preference:	The system must analyze the data to identify whether subscribers mostly subscribe to government or private policies.
-        ix. Premium Analysis:	The system must calculate and report the average monthly premium paid by subscribers to the insurance company.
-        x. Profitability Analysis:	The system must determine the most profitable group based on an analysis of claims and revenues.
-        xi. Patient Segmentation:	The system must list all patients below the age of 18 who have been admitted for cancer.
-        xii. High-Charge Patients:	The system must list patients with cashless insurance and total charges greater than or equal to Rs. 50,000.
-        xiii. Knee Surgery Patients:	The system must list female patients over the age of 40 who have undergone knee surgery in the past year.
+        iv. Hospital Performance: The system must identify the hospital serving the most number of patients based on claims data.
+        v. Subscription Frequency: The system must analyze and identify the subgroup that has the highest number of subscription instances.
+        vi. Rejected Claims Count: The system must calculate and report the total number of claims that have been rejected.
+        vii. Claims by City: The system must determine the city from which the highest number of insurance claims originate.
+        viii. Policy Preference: The system must analyze the data to identify whether subscribers mostly subscribe to government or private policies.
+        ix. Premium Analysis: The system must calculate and report the average monthly premium paid by subscribers to the insurance company.
+        x. Profitability Analysis:The system must determine the most profitable group based on an analysis of claims and revenues.
+        xi. Patient Segmentation: The system must list all patients below the age of 18 who have been admitted for cancer.
+        xii. High-Charge Patients:The system must list patients with cashless insurance and total charges greater than or equal to Rs. 50,000.
+        xiii. Knee Surgery Patients: The system must list female patients over the age of 40 who have undergone knee surgery in the past year.
 
     b.	External Interface Requirements 
         i.	User: The user interface should be designed to be easily usable, allowing users to navigate through different analyses and reports effortlessly
@@ -71,7 +71,7 @@
     d.	Nonfunctional Requirements 
         i.	Performance requirements: The system must handle a given amount of data and deliver analysis results promptly.
         ii.	Security requirements: The system must stick to data privacy standards, ensuring secure storage and processing of sensitive information
-        iii.	Usability requirements: The user interface should be user-friendly enabling users to interact with the system without extensive training.
+        iii. Usability requirements: The user interface should be user-friendly enabling users to interact with the system without extensive training.
         iv.	Scalability requirements: The system should be designed to handle increased data volumes and user demands 
 
 
