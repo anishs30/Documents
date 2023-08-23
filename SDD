@@ -1,0 +1,58 @@
+1.	Solution:
+	a.	Environment and data set creation
+		i.	Set up an AWS account and create an S3 bucket named “input data”.
+		ii.	Upload the given sample data to the “input-data” folder in the S3 bucket.
+		iii.	Set up AWS Redshift, Databricks, and EMR studio.
+		iv.	Create a GitHub repository to manage code
+	b.	Cleaning Activity 
+		i.	Create PySpark scripts in data bricks to clean the data. Use PySpark’s DataFrame API 
+		ii.	Use the following command to connect your databricks to s3 and add your access key and secret key
+			1.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "")
+			2.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "")
+		iii.	Load the datasets from the S3 bucket into PySpark DataFrames
+		iv.	Check for null values in each dataset using .isNull() function
+		v.	Count the total null values for each column using the .agg() function.
+		vi.	Replace null values with "NA" or appropriate values using the .fillna() function.
+		vii.	Drop duplicate records using the .dropDuplicates() function.
+		viii.	Clean the required datasets: Patients, Subscriber, Claims, Group_subgroup.
+		ix.	Create cleaned DataFrames for each cleaned dataset.
+	c.	Redshift table Schema design
+		i.	Create a schema  that shows the structure of the redshift structure table for each cleaned DataFrames. It should include table names, 
+				column names, data types, primary key, and foreign key. 
+		ii.	Use Create Table command to create new tables. 
+	d.	Data Loading to RedShift
+		i.	Load cleaned data from DataBricks to redshift tables based on 
+		ii.	Use the following command and update the command with proper credentials 
+			1.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "")
+			2.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "")
+			3.	df.write.format("redshift").option("url", "jdbc:redshift://default-workgroup.556646946508.us-east-1.redshift-serverless.amazonaws.com:5439/dev").
+					option("dbtable", "test.capstone -project").option("aws_iam_role", "").option("driver","com.amazon.redshift.jdbc42.Driver").option("tempdir", "s3a:// / ").
+					option("user", "admin").option("password", " mode("overwrite").save()
+	e.	Analysis and Result Creation
+		i.	Create a schema “Project-output”.
+		ii.	Write a SQL on those redshift tables (cleaned data table)
+		iii.	One destination table for each use case 
+	f.	Testing and Deploying
+		i.	Test your SQL queries in databricks to visualize the output of SQL
+		ii.	Push the tested code to GitHub repository. 
+		iii.	Deploy it to AWS EMR using that code
+
+2.	Use Cases - List down all the use cases on which this solution will be applicable.
+
+3.	Database Design - List down all possible db(Redshift) tables here
+
+a.	 Tables Metadata Info with Pk/FK relationship - 
+
+b.	 ER diagram - Optional
+
+4.	Technologies and Platforms to be used in this solution 
+
+	AWS S3
+	AWS Redshift
+	Databricks
+	AWS EMR Studio
+	Pyspark
+	Jira
+	GitHub
+
+
