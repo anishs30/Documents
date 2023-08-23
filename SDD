@@ -33,11 +33,26 @@
 		ii.	Write a SQL on those redshift tables (cleaned data table)
 		iii.	One destination table for each use case 
 	f.	Testing and Deploying
-		i.	Test your SQL queries in databricks to visualize the output of SQL
-		ii.	Push the tested code to GitHub repository. 
+		i.	Test your SQL queries in Databricks to visualize the output of SQL
+		ii.	Push the tested code to the GitHub repository. 
 		iii.	Deploy it to AWS EMR using that code
 
-2.	Use Cases - List down all the use cases on which this solution will be applicable.
+2.	Use Cases 
+	a.	Identifying High-Claim Diseases
+	b.	Targeting Young Subscribers
+	c.	Optimizing Group Subgroup Offerings
+	d.	Optimizing Hospital Services
+	e.	Subgroup Subscription Patterns
+	f.	Claim Rejection Analysis
+	g.	Geographical Claims Analysis
+	h.	Government vs. Private Policy Preference
+	i.	Average Premium Pay Analysis
+	j.	Profitable Group Identification
+	k.	Young cancer patients
+	l. 	High-Expense Cashless Insurance
+	m. 	Old-aged female Knee Surgery Patients
+
+
 
 3.	Database Design - List down all possible db(Redshift) tables here
 
