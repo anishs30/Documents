@@ -58,11 +58,24 @@
 
 	a.	Tables Metadata Info with Pk/FK relationship -
 		i.	Patients
-			Columns: patient_id, patient_name, patient_gender, patient_phone, disease_name, city, hospital_id
-		ii.	Subscribers
-		iii.	Claims
-		iv. 	Group_subgroup
+			Columns: patient_id (PK), patient_name, patient_gender, patient_phone, disease_name, city, hospital_id (FK)
 
+		ii.	Subscribers
+			Columns: sub_id (PK), first_name, last_name, Street, Birth_date, Gender, Phone, Country, City, Zip_Code, Subgrp_id (FK), Elig_ind, eff_date, term_date
+
+		iii.	Claims
+			Columns: claim_id (PK), patient_id (FK), disease_name, SUB_ID (FK), CLaim_Or_Rejected, claim_Type, claim_amount, claim_date
+
+		iv. 	Subgroup
+			Columns: SubGrp_id (PK), SubGrp_Name, Monthly_Premium
+
+		v. 	Disease
+			Columns: SubGrpID (FK), Disease_ID (PK), Disease_name
+
+		vi.	Hospital
+			Columns: Hospital_id (PK), Hospital_name, city, state, country
+
+			
 4.	Technologies and Platforms to be used in this solution 
 
 	AWS S3
