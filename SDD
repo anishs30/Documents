@@ -10,7 +10,7 @@
 			1.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "")
 			2.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "")
 		iii.	Load the datasets from the S3 bucket into PySpark DataFrames
-		iv.	Check for null values in each dataset using .isNull() function
+		iv.	Check for null values in each dataset using the .isNull() function
 		v.	Count the total null values for each column using the .agg() function.
 		vi.	Replace null values with "NA" or appropriate values using the .fillna() function.
 		vii.	Drop duplicate records using the .dropDuplicates() function.
@@ -21,11 +21,11 @@
 				column names, data types, primary key, and foreign key. 
 		ii.	Use Create Table command to create new tables. 
 	d.	Data Loading to RedShift
-		i.	Load cleaned data from DataBricks to redshift tables based on 
-		ii.	Use the following command and update the command with proper credentials 
+		i.	Load cleaned data from DataBricks to redshift tables 
+		ii.	Use the following command and update the command with the proper credentials 
 			1.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "")
 			2.	spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key", "")
-			3.	df.write.format("redshift").option("url", "jdbc:redshift://default-workgroup.556646946508.us-east-1.redshift-serverless.amazonaws.com:5439/dev").
+			3.	df. write.format("redshift").option("url", "jdbc:redshift://default-workgroup.556646946508.us-east-1.redshift-serverless.amazonaws.com:5439/dev").
 					option("dbtable", "test.capstone -project").option("aws_iam_role", "").option("driver","com.amazon.redshift.jdbc42.Driver").option("tempdir", "s3a:// / ").
 					option("user", "admin").option("password", " mode("overwrite").save()
 	e.	Analysis and Result Creation
@@ -54,11 +54,14 @@
 
 
 
-3.	Database Design - List down all possible db(Redshift) tables here
+3.	Database Design -
 
-a.	 Tables Metadata Info with Pk/FK relationship - 
-
-b.	 ER diagram - Optional
+	a.	Tables Metadata Info with Pk/FK relationship -
+		i.	Patients
+			Columns: patient_id, patient_name, patient_gender, patient_phone, disease_name, city, hospital_id
+		ii.	Subscribers
+		iii.	Claims
+		iv. 	Group_subgroup
 
 4.	Technologies and Platforms to be used in this solution 
 
