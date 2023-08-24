@@ -19,7 +19,7 @@
 	c.	Redshift table Schema design
 		i.	Create a schema  that shows the structure of the redshift structure table for each cleaned DataFrames. It should include table names, 
 				column names, data types, primary key, and foreign key. 
-		ii.	Use Create Table command to create new tables. 
+		ii.	Use the Create Table command to create new tables. 
 	d.	Data Loading to RedShift
 		i.	Load cleaned data from DataBricks to redshift tables 
 		ii.	Use the following command and update the command with the proper credentials 
@@ -30,7 +30,7 @@
 					option("user", "admin").option("password", " mode("overwrite").save()
 	e.	Analysis and Result Creation
 		i.	Create a schema “Project-output”.
-		ii.	Write a SQL on those redshift tables (cleaned data table)
+		ii.	Write an SQL on those redshift tables (cleaned data table)
 		iii.	One destination table for each use case 
 	f.	Testing and Deploying
 		i.	Test your SQL queries in Databricks to visualize the output of SQL
@@ -74,6 +74,9 @@
 
 		vi.	Hospital
 			Columns: Hospital_id (PK), Hospital_name, city, state, country
+
+		vii.	group
+			Columns: Country, premium_written, zipcode, Grp_Id (PK), Grp_Name, Grp_Type, city, year
 
 			
 4.	Technologies and Platforms to be used in this solution 
