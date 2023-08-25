@@ -1,0 +1,22 @@
+Issue Type,Issue key,Issue id,Summary,Assignee,Assignee Id,Status
+Subtask,SCRUM-41,10040,Push cleaning data pyspark scripts and use case pyspark scripts to that particular gitHub repository ,,,To Do
+Subtask,SCRUM-40,10039,Create local branch to master and push the code to that local branch,,,To Do
+Subtask,SCRUM-39,10038,Create a github repository and clone that repository on local machine,,,To Do
+Subtask,SCRUM-38,10037,Test the scripts in databricks to ensure accurate analysis results ,,,To Do
+Subtask,SCRUM-37,10036,"Develop pyspark scripts for each use case analysis (eg. high-claim diseases, targeting young subscribers, etc)",,,To Do
+Subtask,SCRUM-36,10035,Create a separate table for each use case output in a redshift schema named Project-Output ,,,To Do
+Subtask,SCRUM-35,10034,Create  a schema design doc for target tables,,,To Do
+Subtask,SCRUM-34,10033,Upload all the cleaned data to the redshift table ,,,To Do
+Subtask,SCRUM-33,10032,Create connection to redshift table ,,,To Do
+Subtask,SCRUM-32,10031,Clean subgroup data,,,To Do
+Subtask,SCRUM-31,10030,Clean hospital data,,,To Do
+Subtask,SCRUM-30,10029,Clean group data,,,To Do
+Subtask,SCRUM-29,10028,Clean disease data,,,To Do
+Subtask,SCRUM-28,10027,Clean claims data,,,To Do
+Subtask,SCRUM-27,10026,Clean subscriber data,,,To Do
+Subtask,SCRUM-26,10025,Clean patient data,,,To Do
+Subtask,SCRUM-25,10024,Upload data to S3,,,To Do
+Story,SCRUM-24,10023,Implementation,,,To Do
+Subtask,SCRUM-23,10022,Create solution design document,,,To Do
+Subtask,SCRUM-22,10021,Create requirements specification document,,,To Do
+Story,SCRUM-21,10020,Documents,,,To Do
